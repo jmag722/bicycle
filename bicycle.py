@@ -3,25 +3,27 @@ import numpy as np
 import scipy.constants as sc
 import scipy.integrate as integ
 
-## Kinematic Bicycle Model
+"""
+Kinematic Bicycle Model
 
-# * car is modeled as a front and back wheel only
-# * car is modeled as RWD (FWD is also possible, but equations change slightly,
-#   if you want I can look into adding it)
-# * wheels do not slip
-# * computed positions I believe are for the position of the back wheel (knowing
-#   the wheelbase you could compute front wheel position or center of car)
+* car is modeled as a front and back wheel only
+* car is modeled as RWD (FWD is also possible, but equations change slightly,
+  if you want I can look into adding it)
+* wheels do not slip
+* computed positions I believe are for the position of the back wheel (knowing
+  the wheelbase you could compute front wheel position or center of car)
 
-# References:
+References:
 
-# I liked this one a lot
-# https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/BicycleModel.html
+I liked this one a lot
+https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/BicycleModel.html
 
-# more in-depth
-# https://scholarships.engin.umich.edu/wp-content/uploads/sites/36/2020/02/Final-Report.pdf
+more in-depth
+https://scholarships.engin.umich.edu/wp-content/uploads/sites/36/2020/02/Final-Report.pdf
 
-# similar to the first, looked good though
-# https://www.shuffleai.blog/blog/Simple_Understanding_of_Kinematic_Bicycle_Model.html
+similar to the first, looked good though
+https://www.shuffleai.blog/blog/Simple_Understanding_of_Kinematic_Bicycle_Model.html
+"""
 
 ################################################################
 
